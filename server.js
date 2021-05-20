@@ -17,40 +17,6 @@ app.get("/", function(req, res){
     res.send("Welcome to My Basic Site");
 })
  
-app.get("/resume", function(req, res){
-    filePathName=__dirname+'/static/html/resume.html';
-    res.sendFile(filePathName);
-})
-
-app.get("/google", function(req, res){
-    filePathName=__dirname+'/static/html/google.html';
-    res.sendFile(filePathName);
-})
-
-app.get("/colour", function(req, res){
-    filePathName=__dirname+'/static/html/colour.html';
-    res.sendFile(filePathName);
-})
-
-app.get("/login", function(req, res){
-    filePathName=__dirname+'/static/html/login.html';
-    res.sendFile(filePathName);
-})
-
-app.get("/register", function(req, res){
-    filePathName=__dirname+'/static/html/register.html';
-    res.sendFile(filePathName);
-})
-
-app.get("/todo", function(req, res){
-    filePathName=__dirname+'/static/html/todo.html';
-    res.sendFile(filePathName);
-})
-
-app.get("/piechart", function(req, res){
-    filePathName=__dirname+'/static/html/piechart.html';
-    res.sendFile(filePathName);
-})
 
 app.get("/crudd", function(req, res){
     filePathName=__dirname+'/static/html/crud.html';
