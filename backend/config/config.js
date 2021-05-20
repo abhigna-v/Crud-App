@@ -1,4 +1,4 @@
 module.exports = {
-    mongoConnectionString: 'mongodb+srv://library:library@cluster0.xo1ph.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'||'',
+    mongoConnectionString: 'mongodb+srv://abhi:abhi@cluster0.hhb8k.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'||'',
     webPort : process.env.PORT || 3000
 }

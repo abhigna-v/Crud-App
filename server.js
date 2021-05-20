@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, "static")));
 connect.connect();
 
 app.get("/", function(req, res){
-    res.send("Welcome to My Basic Site");
+    res.send("Welcome to My Site");
 })
  
 
@@ -26,10 +26,8 @@ app.get("/crud", courselib.getall);
 app.delete("/crud/:idd", courselib.deleteone);
 app.put("/crud/:idd", courselib.update);
 app.post("/crud",courselib.addnewone);
-// Heroku will automatically set an environment variable called PORT
 const PORT = config.webPort;
  
-// Start the server
 app.listen(PORT, function(){
     console.log("Server Starting running on http://localhost:"+PORT);
 })
